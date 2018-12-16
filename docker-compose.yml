@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 9527:80
+    volumes:
+      - ./www:/var/www/html/
+    environment:
+      WORDPRESS_DB_PASSWORD: gymblog
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 9506:3306
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: gymblog

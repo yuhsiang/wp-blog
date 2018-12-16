@@ -1,4 +1,4 @@
-# GYM Blog
+# Blog
 
 ## 第一次創建 Wordpress Blog
 

@@ -1,0 +1,12 @@
+www
+
+.DS_Store                                                                       
+node_modules
+*.swp
+*.pyc
+*.un~
+build
+report
+*.log
+.env
+
